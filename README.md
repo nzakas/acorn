@@ -1,7 +1,7 @@
 # Acorn
 
 [![Build Status](https://travis-ci.org/ternjs/acorn.svg?branch=master)](https://travis-ci.org/ternjs/acorn)
-[![NPM version](https://img.shields.io/npm/v/acorn.svg)](https://www.npmjs.com/package/acorn)  
+[![NPM version](https://img.shields.io/npm/v/acorn.svg)](https://www.npmjs.com/package/acorn)
 [Author funding status: ![maintainer happiness](https://marijnhaverbeke.nl/fund/status_s.png?force)](https://marijnhaverbeke.nl/fund/)
 
 A tiny, fast JavaScript parser, written completely in JavaScript.
@@ -62,10 +62,10 @@ object referring to that same position.
 [estree]: https://github.com/estree/estree
 
 - **ecmaVersion**: Indicates the ECMAScript version to parse. Must be
-  either 3, 5, 6, or 7. This influences support for strict mode, the set
+  either 3, 5, 6, 7, or 8. This influences support for strict mode, the set
   of reserved words, and support for new syntax features. Default is 6.
 
-  **NOTE**: Only 'stage 4' (finalized) ECMAScript 7 features are being
+  **NOTE**: Only 'stage 4' (finalized) ECMAScript 8 features are being
   implemented by Acorn. That means that most of the draft standard is
   not yet being parsed.
 

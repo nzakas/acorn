@@ -6,6 +6,7 @@
     require("./tests.js");
     require("./tests-harmony.js");
     require("./tests-es7.js");
+    require("./tests-es8.js");
     acorn = require("../dist/acorn")
     require("../dist/acorn_loose")
   } else {

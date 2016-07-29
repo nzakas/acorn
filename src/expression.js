@@ -241,7 +241,7 @@ pp.parseSubscripts = function(base, startPos, startLoc, noCalls) {
     } else if (!noCalls && this.eat(tt.parenL)) {
       let node = this.startNodeAt(startPos, startLoc)
       node.callee = base
-      node.arguments = this.parseExprList(tt.parenR, false)
+      node.arguments = this.parseExprList(tt.parenR, this.options.ecmaVersion >= 8)
       base = this.finishNode(node, "CallExpression")
     } else if (this.type === tt.backQuote) {
       let node = this.startNodeAt(startPos, startLoc)
